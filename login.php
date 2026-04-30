@@ -22,18 +22,18 @@ error_reporting(E_ALL);
 <body>
 
 <div class="login-container">
-    <h2>Eduka Login</h2>
+    <h2>Eduka</h2>
     
     <?php if(isset($_GET['error'])): ?>
         <p class="error"><?php echo htmlspecialchars($_GET['error']); ?></p>
     <?php endif; ?>
 
     <form action="authenticate.php" method="POST">
-        <label for="username">Username</label>
-        <input type="text" name="username" placeholder="Injiza izina" required>
+        <label for="username">Amazina wifuje Gukoresha</label>
+        <input type="text" name="username" placeholder="muhire.." required>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Ijambo ry'ibanga" required>
+        <label for="password">Ijambo Ry'ibanga</label>
+        <input type="password" name="password" placeholder="......" required>
 
         <button type="submit" name="login">Injira</button>
     </form>
