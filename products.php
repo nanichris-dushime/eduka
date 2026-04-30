@@ -38,7 +38,7 @@ if (isset($_GET['delete'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Manage Products</title>
+    <title>Managinga Ibicuruzwa Byawe</title>
     <style>
         body { font-family: sans-serif; margin: 30px; background-color: #f8f9fa; }
         .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -57,31 +57,31 @@ if (isset($_GET['delete'])) {
 
 <div class="container">
     <a href="logout.php" class="logout">Logout</a>
-    <h2>Eduka Product Management</h2>
-    <p>Logged in as: <strong><?php echo $_SESSION['username']; ?></strong></p>
+    <h2>Eduka Ibicuruzwa </h2>
+    <p>Izina Ukoresha: <strong><?php echo $_SESSION['username']; ?></strong></p>
 
     <form method="POST" action="products.php">
-        <h3>Register New Product</h3>
-        <label>Product Name</label><br>
+        <h3>Shyiramo Igicuruzwa Gishya</h3>
+        <label>Izina Ry'igicuruzwa</label><br>
         <input type="text" name="pname" required><br>
         
-        <label>Unit Price</label><br>
+        <label>Amafaranga Kigura</label><br>
         <input type="text" name="uprice" required><br>
         
-        <label>Quantity</label><br>
+        <label>Ingano Yacyo</label><br>
         <input type="text" name="nproduct" required><br>
         
-        <button type="submit" name="add_product" style="background: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer;">Save Product</button>
+        <button type="submit" name="add_product" style="background: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer;">Emeza igicuruzwa</button>
     </form>
 
-    <h3>Product List</h3>
+    <h3>Liste Y'ibicuruzwa</h3>
     <table>
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Actions</th>
+            <th>ayidi</th>
+            <th>Izina</th>
+            <th>Amafaranga</th>
+            <th>Ingano</th>
+            <th>Waba ushaka</th>
         </tr>
         <?php
     $stmt = $pdo->query("SELECT * FROM Product");
@@ -92,8 +92,8 @@ if (isset($_GET['delete'])) {
                 <td>{$row['Uprice']}</td>
                 <td>{$row['Nproduct']}</td>
                 <td>
-                    <a href='edit_product.php?id={$row['Pid']}' class='btn btn-edit'>Modify</a>
-                    <a href='products.php?delete={$row['Pid']}' class='btn btn-delete' onclick='return confirm(\"Are you sure?\")'>Delete</a>
+                    <a href='edit_product.php?id={$row['Pid']}' class='btn btn-edit'>Guhindura ibinjyanye nigicuruzwa</a>
+                    <a href='products.php?delete={$row['Pid']}' class='btn btn-delete' onclick='return confirm(\"Urabyemera ko ?\")'>Gusiba iki gicuruzwa</a>
                 </td>
             </tr>";
         }
