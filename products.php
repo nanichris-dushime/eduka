@@ -56,7 +56,7 @@ if (isset($_GET['delete'])) {
 <body>
 
 <div class="container">
-    <a href="logout.php" class="logout">Logout</a>
+    <a href="logout.php" class="logout">Kuramo Konti yawe</a>
     <h2>Eduka Ibicuruzwa </h2>
     <p>Izina Ukoresha: <strong><?php echo $_SESSION['username']; ?></strong></p>
 
