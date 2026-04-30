@@ -44,16 +44,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>body{font-family:Arial;margin:20px;} form{max-width:400px;background:#f7f7f7;padding:20px;border-radius:6px;} input{width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:4px;} button{background:#007bff;color:white;padding:8px 12px;border:none;border-radius:4px;}</style>
 </head>
 <body>
-    <h2>Edit Product</h2>
+    <h2>Hindura Ibijyanye nigicuruzwa</h2>
     <form method="post">
-        <label>Product Name</label>
+        <label>Izina Ry'igicuruzwa</label>
         <input name="pname" value="<?php echo htmlspecialchars($product['Pname']); ?>" required>
-        <label>Unit Price</label>
+        <label>Igiciro</label>
         <input name="uprice" value="<?php echo htmlspecialchars($product['Uprice']); ?>" required>
-        <label>Quantity</label>
+        <label>Ingano</label>
         <input name="nproduct" value="<?php echo htmlspecialchars($product['Nproduct']); ?>" required>
-        <button type="submit">Save</button>
+        <button type="submit">Emeza</button>
     </form>
-    <p><a href="products.php">Back</a></p>
+    <p><a href="products.php">Subira inyuma</a></p>
 </body>
 </html>
