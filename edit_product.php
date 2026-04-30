@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Edit Product</title>
+    <title>Guhindura Ibijyanye nigicuruzwa</title>
     <style>body{font-family:Arial;margin:20px;} form{max-width:400px;background:#f7f7f7;padding:20px;border-radius:6px;} input{width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:4px;} button{background:#007bff;color:white;padding:8px 12px;border:none;border-radius:4px;}</style>
 </head>
 <body>
