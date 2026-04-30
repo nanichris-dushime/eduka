@@ -41,8 +41,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="utf-8">
     <title>Guhindura Ibijyanye nigicuruzwa</title>
-    <style>body{font-family:Arial;margin:20px;} form{max-width:400px;background:#f7f7f7;padding:20px;border-radius:6px;} input{width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:4px;} button{background:#007bff;color:white;padding:8px 12px;border:none;border-radius:4px;}</style>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f8f9fa;
+    }
+    form {
+        max-width: 400px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background: #007bff;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }  
+</style>
 <body>
     <h2>Hindura Ibijyanye nigicuruzwa</h2>
     <form method="post">
