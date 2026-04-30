@@ -17,13 +17,13 @@ $password = $_POST['password'] ?? '';
 $type = $_POST['type'] ?? 'Cashier';
 
 $errors = [];
-if ($username === '') $errors[] = 'Username is required';
-if ($name === '') $errors[] = 'Name is required';
-if ($password === '') $errors[] = 'Password is required';
+if ($username === '') $errors[] = 'amazina ukoresha ni ngombwa';
+if ($name === '') $errors[] = 'Amazina ni ngombwa';
+if ($password === '') $errors[] = 'Ijambo ry`ibanga ni ngombwa';
 
 if (!empty($errors)) {
     foreach ($errors as $err) echo htmlspecialchars($err) . "<br>";
-    echo '<a href="signup.php">Back</a>';
+    echo '<a href="signup.php">Inyuma</a>';
     exit;
 }
 
@@ -31,7 +31,7 @@ if (!empty($errors)) {
 $check = $pdo->prepare('SELECT uid FROM Users WHERE Username = ?');
 $check->execute([$username]);
 if ($check->fetch()) {
-    echo 'Username already exists. <a href="signup.php">Try another</a>';
+    echo 'Aya mazina yamaze GUkoreshwa. <a href="signup.php">Gerageza irindi</a>';
     exit;
 }
 
@@ -80,9 +80,9 @@ $password = $_POST['password'] ?? '';
 $type = $_POST['type'] ?? 'cashier';
 
 $errors = [];
-if ($username === '') $errors[] = 'Username is required';
-if ($name === '') $errors[] = 'Name is required';
-if ($password === '') $errors[] = 'Password is required';
+if ($username === '') $errors[] = 'Amazina ukoresha ni ngombwa';
+if ($name === '') $errors[] = 'Izina ryawe ni ngombwa';
+if ($password === '') $errors[] = 'Ijambo ry`ibanga ni ngombwa';
 
 
 $username=$_POST['username'];
